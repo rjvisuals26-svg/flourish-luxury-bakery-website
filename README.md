@@ -3,11 +3,11 @@
 # ✨ F L O U R I S H ✨
 **A Luxury Patisserie & Artisanal Bakery E-commerce Experience**
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Site-D4AF37?style=for-the-badge&logo=vercel)](https://your-live-link-here.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Site-D4AF37?style=for-the-badge&logo=vercel)](https://flourishwebs.netlify.app/)
 [![UI/UX Design](https://img.shields.io/badge/UI%2FUX-Editorial_Minimalism-F5E6E8?style=for-the-badge&logo=figma&logoColor=black)](#)
 [![Developer](https://img.shields.io/badge/Developer-DigitalReality-1E1E1E?style=for-the-badge)](#)
 
-<img src="https://via.placeholder.com/1000x400/FFF8F0/D4AF37?text=Flourish+Luxury+Bakery+Banner" alt="Flourish Banner" width="100%">
+<img src="https://i.ibb.co/bg6fZ9QH/Screenshot-2026-06-22-133456.png" alt="Flourish Banner" width="100%">
 
 *Crafted with passion. Designed to delight. An elegant e-commerce platform blending warm minimalism with high-end editorial aesthetics.*
 
@@ -25,7 +25,7 @@
 
 | 🌐 Live Website | 📱 Scan to View Mobile Experience |
 | :---: | :---: |
-| [**Experience Flourish Live**](https://your-live-link-here.com) | <img src="https://via.placeholder.com/150x150/FFF8F0/D4AF37?text=QR+Code" alt="QR Code" width="150"> |
+| [**Experience Flourish Live**](https://flourishwebs.netlify.app/) | <img src="https://i.ibb.co/tT8tMQ9m/qrcode-366749521-e7addbd0d041bce27f33ed92f06f2cf9.png" alt="QR Code" width="150"> |
 
 </div>
 
