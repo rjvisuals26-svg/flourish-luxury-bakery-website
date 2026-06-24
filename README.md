@@ -35,13 +35,20 @@
 
 *To ensure the visual integrity of the project, refer to the following local assets:*
 
-*   "https://i.ibb.co/RkwFG2zN/Chat-GPT-Image-Jun-22-2026-02-32-43-PM.png": Hero section & branding reference.
-*   `https://i.ibb.co/zVX6fWzf/Screenshot-2026-06-22-133551.png`: Cake collection UI component.
-*   `https://i.ibb.co/rGrvtdWr/Screenshot-2026-06-22-133833.png`: Gallery & editorial layout.
-*   `https://i.ibb.co/sv9v1t2W/Screenshot-2026-06-22-133945.png`: Product selection modal.
-*   `https://i.ibb.co/TMyn45sQ/Screenshot-2026-06-22-134023.png`: Cart and checkout flow.
+**Hero section & branding reference**
+![Hero Section](https://i.ibb.co/RkwFG2zN/Chat-GPT-Image-Jun-22-2026-02-32-43-PM.png)
 
----
+**Cake collection UI component**
+![Cake Collection](https://i.ibb.co/zVX6fWzf/Screenshot-2026-06-22-133551.png)
+
+**Gallery & editorial layout**
+![Gallery Layout](https://i.ibb.co/rGrvtdWr/Screenshot-2026-06-22-133833.png)
+
+**Product selection modal**
+![Product Modal](https://i.ibb.co/sv9v1t2W/Screenshot-2026-06-22-133945.png)
+
+**Cart and checkout flow**
+![Cart and Checkout](https://i.ibb.co/TMyn45sQ/Screenshot-2026-06-22-134023.png)
 
 ## 🤍 Key Features
 
