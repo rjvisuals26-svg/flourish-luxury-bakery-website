@@ -35,7 +35,7 @@
 
 *To ensure the visual integrity of the project, refer to the following local assets:*
 
-*   `https://i.ibb.co/RkwFG2zN/Chat-GPT-Image-Jun-22-2026-02-32-43-PM.png`: Hero section & branding reference.
+*   "https://i.ibb.co/RkwFG2zN/Chat-GPT-Image-Jun-22-2026-02-32-43-PM.png": Hero section & branding reference.
 *   `https://i.ibb.co/zVX6fWzf/Screenshot-2026-06-22-133551.png`: Cake collection UI component.
 *   `https://i.ibb.co/rGrvtdWr/Screenshot-2026-06-22-133833.png`: Gallery & editorial layout.
 *   `https://i.ibb.co/sv9v1t2W/Screenshot-2026-06-22-133945.png`: Product selection modal.
