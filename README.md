@@ -61,11 +61,11 @@
 
 ## 💻 Tech Stack
 
-*   **Frontend:** React.js / Next.js
-*   **Styling:** Tailwind CSS
-*   **State Management:** Redux / React Context API
+*   **Frontend:** HTML
+*   **Styling:** CSS
+*   **Animation:** Javascript
 *   **Database/Backend:** Firebase / Node.js
-*   **Design & Prototyping:** Figma
+
 
 ---
 
