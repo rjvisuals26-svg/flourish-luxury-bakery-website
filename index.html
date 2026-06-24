@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Flourish Patisserie</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-links" style="justify-content: flex-start;">
+            <a href="#cakes">Collections</a>
+            <a href="#reviews">Reviews</a>
+        </div>
+        <div class="logo">
+            <h1>FLOURISH</h1>
+        </div>
+        <div class="nav-links" style="align-items: center; justify-content: flex-end;">
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <div class="nav-icons" style="display: flex; gap: 1.5rem; margin-left: 1rem;">
+                <a aria-label="Favorites" class="nav-icon" href="#" style="position: relative;">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <span class="fav-badge"
+                        style="position:absolute; top:-6px; right:-8px; background:var(--color-accent-gold); color:#fff; font-size:0.65rem; width:16px; height:16px; border-radius:50%; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s; font-family: var(--font-body); font-weight:600;">0</span></a>
+                <a aria-label="Cart" class="nav-icon" href="#" style="position: relative;">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-badge"
+                        style="position:absolute; top:-6px; right:-8px; background:var(--color-accent-gold); color:#fff; font-size:0.65rem; width:16px; height:16px; border-radius:50%; display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s; font-family: var(--font-body); font-weight:600;">0</span></a>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-divider"></div>
+    <header class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img alt="Premium Cakes" src="https://i.ibb.co/1tB3t5w6/Gemini-Generated-Image-zcauy3zcauy3zcau.png" />
+            </div>
+            <div class="slide">
+                <img alt="Premium Cupcakes" src="assets/banner_cupcake.png" />
+            </div>
+            <div class="slide">
+                <img alt="Premium Donuts" src="assets/banner_donut.png" />
+            </div>
+        </div>
+        <button aria-label="Previous slide" class="slider-arrow prev-arrow">❮</button>
+        <button aria-label="Next slide" class="slider-arrow next-arrow">❯</button>
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </header>
+    <section class="category-filters section-padding" style="padding-top: 4rem; padding-bottom: 0;">
+        <div class="filter-container">
+            <button class="filter-btn active" data-target="cakes">Cakes</button>
+            <button class="filter-btn" data-target="sundaes">Sundaes</button>
+            <button class="filter-btn" data-target="cupcakes">Cupcakes</button>
+            <button class="filter-btn" data-target="cookies">Cookies</button>
+            <button class="filter-btn" data-target="minidonuts">Mini Donuts</button>
+        </div>
+    </section>
+    <section class="signature-collection section-padding" id="cakes">
+        <div class="section-header">
+            <h3>Cakes</h3>
+            <div class="gold-line"></div>
+        </div>
+        <div class="slider-wrapper"><button aria-label="Previous" class="slider-btn prev">←</button><button
+                aria-label="Next" class="slider-btn next">→</button>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Custom Cakes"
+                        src="https://i.ibb.co/jvbM2Rds/Decorate-Your-Baking-with-Yummy-Cakes-and-Proper-Recipes.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">01</span>
+                        <span class="card-tag">CUSTOM</span>
+                    </div>
+                    <h4 class="card-title">Chocolat Noir</h4>
+                    <p class="card-desc">Composed to your occasion, sketch by hand.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Wedding Cakes"
+                        src="https://i.ibb.co/xkx31wd/5-Easy-Cake-Recipes-You-Need-to-Try-Right-Now.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">02</span>
+                        <span class="card-tag">BRIDAL</span>
+                    </div>
+                    <h4 class="card-title">Pink Velvet</h4>
+                    <p class="card-desc">Heirloom tiers dressed in fresh blooms.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Vanilla Bean"
+                        src="https://i.ibb.co/N6hpt6xK/15-Irresistible-Vanilla-Velvet-Cake-Ideas-with-Creamy-Butter-Frosting.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">03</span>
+                        <span class="card-tag">PETIT FOUR</span>
+                    </div>
+                    <h4 class="card-title">Macarons</h4>
+                    <p class="card-desc">Twelve seasonal shells, refreshed each Monday.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Cinnamon Cloud"
+                        src="https://i.ibb.co/08bQ80y/Moist-Creamy-Tres-Leches-Cake-This-decadent-Latin-American-cake-is-light-as-air-soaked-in-a.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">04</span>
+                        <span class="card-tag">BOUTIQUE</span>
+                    </div>
+                    <h4 class="card-title">Cupcakes</h4>
+                    <p class="card-desc">Single-serving classics with gold-flake finishing.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Cinnamon Cloud"
+                        src="https://i.ibb.co/mFPbZ0TK/Simple-and-Creative-Birthday-Cake-Decorating-Ideas-You-Can-Try-at-Home.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">05</span>
+                        <span class="card-tag">BOUTIQUE</span>
+                    </div>
+                    <h4 class="card-title">Special Cupcakes</h4>
+                    <p class="card-desc">Single-serving classics with gold-flake finishing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sundaes-collection section-padding" id="sundaes">
+        <div class="section-header">
+            <h3>Sundaes</h3>
+            <div class="gold-line"></div>
+        </div>
+        <div class="slider-wrapper"><button aria-label="Previous" class="slider-btn prev">←</button><button
+                aria-label="Next" class="slider-btn next">→</button>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Strawberry Elegance Sundae"
+                        src="https://i.ibb.co/N2DVHq2M/Gemini-Generated-Image-tuyuehtuyuehtuyu.png" />
+                    <div class="card-meta">
+                        <span class="card-num">01</span>
+                        <span class="card-tag">SIGNATURE</span>
+                    </div>
+                    <h4 class="card-title">Strawberry</h4>
+                    <p class="card-desc">Hand-whipped cream and fresh local berries.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Valrhona Fudge Sundae"
+                        src="https://i.ibb.co/DHR3gpQQ/Gemini-Generated-Image-1wdvss1wdvss1wdv.png" />
+                    <div class="card-meta">
+                        <span class="card-num">02</span>
+                        <span class="card-tag">DECADENT</span>
+                    </div>
+                    <h4 class="card-title">Valrhona Fudge</h4>
+                    <p class="card-desc">Rich dark chocolate with gold leaf accents.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Caramel Gold Sundae"
+                        src="https://i.ibb.co/p6NZHNwq/Gemini-Generated-Image-wgcp9fwgcp9fwgcp-1.png" />
+                    <div class="card-meta">
+                        <span class="card-num">03</span>
+                        <span class="card-tag">ARTISANAL</span>
+                    </div>
+                    <h4 class="card-title">Caramel Gold</h4>
+                    <p class="card-desc">Salted caramel drizzle with toasted pecans.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Pistachio Dream Sundae"
+                        src="https://i.ibb.co/B2tKWtnB/Gemini-Generated-Image-6clg426clg426clg.png" />
+                    <div class="card-meta">
+                        <span class="card-num">04</span>
+                        <span class="card-tag">EXCLUSIVE</span>
+                    </div>
+                    <h4 class="card-title">Pistachio Dream</h4>
+                    <p class="card-desc">Bronte pistachios atop silky vanilla bean ice cream.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Pistachio Dream Sundae"
+                        src="https://i.ibb.co/B2tKWtnB/Gemini-Generated-Image-6clg426clg426clg.png" />
+                    <div class="card-meta">
+                        <span class="card-num">05</span>
+                        <span class="card-tag">EXCLUSIVE</span>
+                    </div>
+                    <h4 class="card-title">Special Pistachio Dream</h4>
+                    <p class="card-desc">Bronte pistachios atop silky vanilla bean ice cream.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cupcakes-collection section-padding" id="cupcakes">
+        <div class="section-header">
+            <h3>Cupcakes</h3>
+            <div class="gold-line"></div>
+        </div>
+        <div class="slider-wrapper"><button aria-label="Previous" class="slider-btn prev">←</button><button
+                aria-label="Next" class="slider-btn next">→</button>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Red Velvet Royale"
+                        src="https://i.ibb.co/HLkf9YHF/Vanilla-Cupcakes-with-Sweet-Buttercream-Frosting.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">01</span>
+                        <span class="card-tag">CLASSIC</span>
+                    </div>
+                    <h4 class="card-title">Red Velvet Royale</h4>
+                    <p class="card-desc">Velvety crimson sponge with cream cheese frosting.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Vanilla Elegance" src="https://i.ibb.co/3ypZq9bM/download-1.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">02</span>
+                        <span class="card-tag">SIGNATURE</span>
+                    </div>
+                    <h4 class="card-title">Vanilla Elegance</h4>
+                    <p class="card-desc">Madagascar vanilla bean topped with edible pearls.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Chocolate Ganache" src="https://i.ibb.co/6JVJk0kx/Chocolate-Hazelnut-Cupcakes.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">03</span>
+                        <span class="card-tag">PREMIUM</span>
+                    </div>
+                    <h4 class="card-title">Chocolate</h4>
+                    <p class="card-desc">Dark chocolate core with whipped ganache.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Lemon Meringue"
+                        src="https://i.ibb.co/1tnNX9Cm/Red-Velvet-Cupcakes-The-Perfect-Valentine-s-Day-Dessert-Recipe.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">04</span>
+                        <span class="card-tag">SEASONAL</span>
+                    </div>
+                    <h4 class="card-title">Lemon Meringue</h4>
+                    <p class="card-desc">Zesty lemon curd topped with toasted meringue.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Lemon Meringue" src="https://i.ibb.co/qMKC1C8X/Chocolate-Cupcakes.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">05</span>
+                        <span class="card-tag">SEASONAL</span>
+                    </div>
+                    <h4 class="card-title">Special Lemon Meringue</h4>
+                    <p class="card-desc">Zesty lemon curd topped with toasted meringue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cookies-collection section-padding" id="cookies">
+        <div class="section-header">
+            <h3>Cookies</h3>
+            <div class="gold-line"></div>
+        </div>
+        <div class="slider-wrapper"><button aria-label="Previous" class="slider-btn prev">←</button><button
+                aria-label="Next" class="slider-btn next">→</button>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Classic Chocolate Chip"
+                        src="https://i.ibb.co/XZG9M3sJ/Homemade-Reese-s-Peanut-Butter-Hearts-Baker-by-Nature.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">01</span>
+                        <span class="card-tag">TRADITION</span>
+                    </div>
+                    <h4 class="card-title">Chocolate Chip</h4>
+                    <p class="card-desc">Brown butter dough with semi-sweet morsels.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Double Fudge" src="https://i.ibb.co/C3TFS9xJ/download-3.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">02</span>
+                        <span class="card-tag">DECADENT</span>
+                    </div>
+                    <h4 class="card-title">Double Fudge</h4>
+                    <p class="card-desc">Intense cocoa profile with molten center.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="White Chocolate Macadamia" src="https://i.ibb.co/JF3Bh9R3/Linzer-cookies-Austria.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">03</span>
+                        <span class="card-tag">PREMIUM</span>
+                    </div>
+                    <h4 class="card-title">Macadamia Nut</h4>
+                    <p class="card-desc">Roasted macadamia nuts with white chocolate chunks.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Oatmeal Raisin" src="https://i.ibb.co/8nWky9KM/download-2.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">04</span>
+                        <span class="card-tag">HOMESTYLE</span>
+                    </div>
+                    <h4 class="card-title">Oatmeal Raisin</h4>
+                    <p class="card-desc">Spiced oats with plump, rum-soaked raisins.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Oatmeal Raisin"
+                        src="https://i.ibb.co/nqLDhc2j/Perfect-Chewy-Chocolate-Chip-Cookies-Soft-in-the-Middle-Crispy-Edges-Bakery-Style-Recipe.jpgch" />
+                    <div class="card-meta">
+                        <span class="card-num">05</span>
+                        <span class="card-tag">HOMESTYLE</span>
+                    </div>
+                    <h4 class="card-title">Special Oatmeal Raisin</h4>
+                    <p class="card-desc">Spiced oats with plump, rum-soaked raisins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="donuts-collection section-padding" id="minidonuts">
+        <div class="section-header">
+            <h3>Mini Donuts</h3>
+            <div class="gold-line"></div>
+        </div>
+        <div class="slider-wrapper"><button aria-label="Previous" class="slider-btn prev">←</button><button
+                aria-label="Next" class="slider-btn next">→</button>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Glazed Vanilla" src="https://i.ibb.co/9kSqn1qJ/download-4.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">01</span>
+                        <span class="card-tag">CLASSIC</span>
+                    </div>
+                    <h4 class="card-title">Glazed Vanilla</h4>
+                    <p class="card-desc">Light yeast rings with Madagascar vanilla glaze.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Strawberry Sprinkle" src="https://i.ibb.co/d0VMKxQt/Doughnut.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">02</span>
+                        <span class="card-tag">PLAYFUL</span>
+                    </div>
+                    <h4 class="card-title">Straw Sprinkle</h4>
+                    <p class="card-desc">Fresh strawberry icing topped with rainbow sprinkles.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Chocolate Dip" src="https://i.ibb.co/xqY2n9jW/download-5.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">03</span>
+                        <span class="card-tag">SIGNATURE</span>
+                    </div>
+                    <h4 class="card-title">Chocolate Dip</h4>
+                    <p class="card-desc">Rich dark chocolate ganache dip.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Cinnamon Sugar" src="https://i.ibb.co/SX5Lc25j/download-6.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">04</span>
+                        <span class="card-tag">WARM</span>
+                    </div>
+                    <h4 class="card-title">Cinnamon Sugar</h4>
+                    <p class="card-desc">Tossed in Ceylon cinnamon and fine sugar.</p>
+                </div>
+                <div class="grid-item">
+                    <svg class="like-icon" fill="none" height="22" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <button aria-label="Add to cart" class="add-btn">Add to Cart</button>
+                    <img alt="Cinnamon Sugar" src="https://i.ibb.co/H02p2kN/Chocolate-doughnuts.jpg" />
+                    <div class="card-meta">
+                        <span class="card-num">05</span>
+                        <span class="card-tag">WARM</span>
+                    </div>
+                    <h4 class="card-title">Special Cinnamon Sugar</h4>
+                    <p class="card-desc">Tossed in Ceylon cinnamon and fine sugar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="holiday-promo-section" id="holiday-preorder">
+        <div class="editorial-layout holiday-layout">
+            <div class="editorial-text">
+                <span class="holiday-subtitle">— A LIMITED EDITION</span>
+                <h3 class="holiday-title">Holiday Pre-orders</h3>
+                <p class="holiday-desc">Perfect for capturing Valentine’s Day or Mother’s Day bespoke cake reservations.
+                </p>
+                <a class="btn btn-reserve holiday-btn" href="#contact">RESERVE A BOX</a>
+            </div>
+            <div class="editorial-image">
+                <img alt="Holiday Collection" class="holiday-img" src="assets/sig_strawberry_1781877552296.png" />
+            </div>
+        </div>
+        <div class="holiday-promo-border"></div>
+    </section>
+    <section class="reviews-grid-section section-padding" id="reviews">
+        <div class="section-header">
+            <h3>Reviews</h3>
+            <div class="gold-line"></div>
+        </div>
+        <div class="features-grid fade-up">
+            <div class="feature-card">
+                <div
+                    style="color: var(--color-accent-gold); font-size: 1.2rem; margin-bottom: 1rem; letter-spacing: 2px;">
+                    ★★★★★</div>
+                <p
+                    style="font-style: italic; margin-bottom: 1.5rem; font-family: var(--font-heading); font-size: 1.2rem; line-height: 1.5;">
+                    "The most exquisite pastries I've had outside of Paris. The attention to detail is truly unmatched."
+                </p>
+                <h4 style="font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;">— Sarah M.</h4>
+            </div>
+            <div class="feature-card">
+                <div
+                    style="color: var(--color-accent-gold); font-size: 1.2rem; margin-bottom: 1rem; letter-spacing: 2px;">
+                    ★★★★★</div>
+                <p
+                    style="font-style: italic; margin-bottom: 1.5rem; font-family: var(--font-heading); font-size: 1.2rem; line-height: 1.5;">
+                    "Our wedding cake was a masterpiece. Breathtakingly beautiful and the flavors were incredibly
+                    refined."</p>
+                <h4 style="font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;">— Eleanor &amp; James
+                </h4>
+            </div>
+            <div class="feature-card">
+                <div
+                    style="color: var(--color-accent-gold); font-size: 1.2rem; margin-bottom: 1rem; letter-spacing: 2px;">
+                    ★★★★★</div>
+                <p
+                    style="font-style: italic; margin-bottom: 1.5rem; font-family: var(--font-heading); font-size: 1.2rem; line-height: 1.5;">
+                    "Every macaron is perfectly crafted. Flourish has become our weekly weekend tradition!"</p>
+                <h4 style="font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;">— Michael T.</h4>
+            </div>
+        </div>
+    </section>
+    <section class="instagram-gallery section-padding" id="gallery">
+        <div class="section-header">
+            <h3>OUR GALLERY</h3>
+            <div class="gold-line"></div>
+        </div>
+        <div class="gallery-grid">
+            <img alt="Croissants" src="assets/gallery_croissants_1781942915658.png" />
+            <img alt="Cake Slice" src="assets/gallery_cake_slice_1781942944988.png" />
+            <img alt="Bakery Interior" src="assets/gallery_interior_1781942976852.png" />
+            <img alt="Decorating Cake" src="assets/gallery_decorating_1781942987150.png" />
+            <img alt="Macarons Box" src="assets/gallery_macarons_1781943001777.png" />
+            <img alt="Heart Tart" src="assets/gallery_tart_1781943041112.png" />
+        </div>
+    </section>
+    <section class="faq-section section-padding">
+        <div class="section-header">
+            <h3>Frequently Asked Questions</h3>
+            <div class="gold-line"></div>
+        </div>
+        <div class="faq-container fade-up">
+            <div class="faq-item">
+                <button class="faq-question">How far in advance should I order a custom cake?</button>
+                <div class="faq-answer">
+                    <p>For custom and wedding cakes, we recommend booking at least 3-4 months in advance, especially
+                        during the peak wedding season. For smaller celebration cakes, a 2-week notice is generally
+                        sufficient.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer gluten-free or vegan options?</button>
+                <div class="faq-answer">
+                    <p>Yes, we offer a refined selection of gluten-free and vegan pastries and cakes. Please note that
+                        while we take extreme care, our kitchen handles wheat and dairy, so we cannot guarantee a
+                        completely allergen-free environment.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I schedule a tasting session?</button>
+                <div class="faq-answer">
+                    <p>Absolutely. We offer exclusive tasting sessions for weddings and events with over 50 guests.
+                        Tastings include 4 flavor profiles and a design consultation with our head pastry chef.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you deliver?</button>
+                <div class="faq-answer">
+                    <p>Yes, we provide white-glove delivery and setup for tiered cakes within a 50-mile radius. Delivery
+                        fees are calculated based on distance and setup complexity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>FLOURISH</h2>
+                <p>Artisan Patisserie</p>
+            </div>
+            <div class="footer-info">
+                <div class="info-block">
+                    <h4>Visit Us</h4>
+                    <p>123 Elegant Ave<br />Design District, NY 10001</p>
+                </div>
+                <div class="info-block">
+                    <h4>Hours</h4>
+                    <p>Tue - Sun: 8am - 4pm<br />Monday: Closed</p>
+                </div>
+                <div class="info-block">
+                    <h4>Contact</h4>
+                    <p>hello@flourish.com<br />+1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+        <div class="gold-line-full"></div>
+        <div class="footer-bottom">
+            <p>© 2026 Flourish Patisserie. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-container">
+            <button aria-label="Close modal" class="modal-close" id="modal-close">×</button>
+            <div class="modal-left">
+                <img alt="Product Image" id="modal-img" src="" />
+            </div>
+            <div class="modal-right">
+                <h2 class="modal-title" id="modal-title"></h2>
+                <div class="modal-price" id="modal-price">Rs. 2,400.00</div>
+                <p class="modal-desc" id="modal-desc"></p>
+                <div class="modal-instructions">
+                    <label for="special-requests">Instructions</label>
+                    <textarea id="special-requests" placeholder="Any special requests?"></textarea>
+                </div>
+                <div class="modal-actions">
+                    <div class="quantity-selector">
+                        <button aria-label="Decrease quantity" class="qty-btn minus" id="qty-minus">−</button>
+                        <span class="qty-display" id="qty-display">1</span>
+                        <button aria-label="Increase quantity" class="qty-btn plus" id="qty-plus">+</button>
+                    </div>
+                    <button class="btn btn-reserve" id="modal-add-btn">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Cart Sidebar -->
+    <div class="sidebar-drawer" id="cart-sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title">Your Cart</h3>
+            <button class="clear-btn" id="clear-cart-btn">Clear cart</button>
+            <button class="close-sidebar-btn" id="close-cart-btn">&times;</button>
+        </div>
+        <div class="sidebar-body" id="cart-items-container">
+            <!-- Items injected here -->
+        </div>
+        <div class="sidebar-footer">
+            <div class="summary-line">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">Rs. 0.00</span>
+            </div>
+            <div class="summary-line">
+                <span style="color: #666;">Incl. Tax (18%)</span>
+                <span style="color: #666;" id="cart-tax">Rs. 0.00</span>
+            </div>
+            <div class="summary-line">
+                <span style="color: #666;">Delivery Charges</span>
+                <span style="color: #666;">Rs. 0.00</span>
+            </div>
+            <div class="summary-line grand-total">
+                <span>Grand total</span>
+                <span id="cart-total">Rs. 0.00</span>
+            </div>
+            <button class="btn btn-reserve checkout-btn" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Favorites Sidebar -->
+    <div class="sidebar-drawer" id="fav-sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title">Your Favorites</h3>
+            <button class="clear-btn" id="clear-fav-btn">Clear all</button>
+            <button class="close-sidebar-btn" id="close-fav-btn">&times;</button>
+        </div>
+        <div class="sidebar-body" id="fav-items-container">
+            <!-- Items injected here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <div id="toast-container"
+        style="position:fixed; bottom:30px; right:30px; z-index:9999; display:flex; flex-direction:column; gap:10px;">
+    </div>
+</body>
+
+</html>
